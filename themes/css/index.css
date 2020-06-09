@@ -48,15 +48,17 @@
 .qh-three{width: 100%;font-size: 34px;}
 .qh-three h1{font-size: 34px;font-weight: bold;width: 100%;text-align: center;margin: 3% 0 1%;}
 .qh-three h2{font-size: 42px;font-weight: bold;width: 100%;text-align: center;color: #00458E;}
-.qh-three ul{width: 100%;overflow: hidden;height: 60%;}
-.qh-three ul li{width: 33.33%;height: 33.33%;background-size: cover;background-position: center center;}
-
-
-
-
-
-
-
+.qh-three ul{width: 100%;overflow: hidden;height: 90%;margin-top: 3%;}
+.qh-three ul li{width: 33.33%;height: 40%;background-size: cover;background-position: center center;float: left;}
+.nes-div{width: 50%;height:100%;background: rgba(0, 124, 255, .4);}
+.nes-divnrbox{width: 80%;margin-top: 60%;margin-left:10%;}
+.nes-div h1{font-size: 20px;font-weight: bold;width: 100%;color: #fff;text-align: left;}
+.nes-div span{font-size: 14px;width: 100%;display: block;color: #fff;margin: 10px 0;}
+.nes-div em{display: block;width: 142px;height: 3px;background: #fff;}
+.nes-div p{font-size: 14px;color: #fff;line-height: 18px;margin-top: 10px;}
+.nes-divtwo{display: flex;justify-content: center;align-items: center;}
+.nes-divtwo div{width: 60%;}
+.custom-box{width: 100%;overflow: hidden;}
 
 
 
