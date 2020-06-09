@@ -2,7 +2,7 @@ $(function() {
     $('#dowebok').fullpage({
         verticalCentered:true,
         resize:false,
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5','foot'],
         scrollOverflow: false,
         scrollingSpeed: 1000, //速度
         afterLoad: function(anchorLink, index){
