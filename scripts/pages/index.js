@@ -1,11 +1,14 @@
-$(function() {
+$(function () {
+
     $('#dowebok').fullpage({
-        verticalCentered:true,
-        resize:false,
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5','foot'],
+        verticalCentered: true,
+        resize: false,
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'foot'],
         scrollOverflow: false,
         scrollingSpeed: 1000, //速度
-        afterLoad: function(anchorLink, index){
+        scrollBar: false,
+       
+        afterLoad: function (anchorLink, index) {
             // $("#fp-nav ul li").eq(index-1).addClass("active");
             // if(index != 1){
             //     $('header').addClass("active");
@@ -18,7 +21,7 @@ $(function() {
             //     $("#navPage").addClass("noactive");
             // }
         },
-        onLeave: function(index, nextIndex, direction){
+        onLeave: function (index, nextIndex, direction) {
             // if(index != 1){
             //     $('header').removeClass("active");
             // }
