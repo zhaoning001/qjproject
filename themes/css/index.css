@@ -10,18 +10,24 @@ body{
 }
 .section {overflow: hidden;}
 .banner-box{
-    width: 200%;
+    width: 400%;
     height: 100%;
     overflow: hidden;
+    transition: all .6s ease;
 }
-.banner-box li{width:50%;height: 100%;background-size: cover;background-repeat: no-repeat;float: left;overflow: hidden;}
+.banner-box li{width:25%;height: 100%;background-size: cover;background-repeat: no-repeat;float: left;overflow: hidden;}
 .one-wz1{width:50%;margin-left:5%;float: left;margin-top: 20%;}
 .one-wz2{height: 810px;margin-top: 5%;float: left;}
+.lunsy{width: 200px;height: 5px;position: absolute;left: 45%;bottom: 5%;}
+.lunsy li{width: 28%;height: 100%;background: #fff;float: left;margin-right: 2%;vertical-align: bottom;position: absolute;bottom: 0;left: 0;transition: all .6s ease;cursor: pointer;}
+.lunsy li:nth-child(2){left: 34%;}
+.lunsy li:nth-child(3){left: 68%;}
+.lunsy .active{height: 200%;}
 .qh-two h1{font-size: 34px;font-weight:bold;margin-top: 2%;}
 .qh-two h2{font-size: 42px;color: #00458E;margin: 1% 0 1%;font-weight:bold;}
 .qh-two p{font-size: 18px;line-height: 40px;margin-bottom: 1%;}
- .qhtwo-list ul{overflow: hidden;padding: 1%;}
-.qhtwo-list li{border: 1px solid #E3E3E3; margin:-1px ;width: 33.5%;height: 350px;float: left;cursor: pointer;position: relative;  
+.qhtwo-list ul{overflow: hidden;padding: 1%;}
+.qhtwo-list li{border: 1px solid #E3E3E3; margin:-1px ;width: 33.5%;height: 350px;float: left;cursor: pointer;position: relative;
 }   
 .qhtwo-list li:before{ 
     width: 100%;
@@ -100,7 +106,7 @@ body{
     animation-fill-mode: both;
 }
 .customers-box{
-    padding: 10% 0;
+    padding: 1% 0;
     background-image:url(/themes/images/index/logoiocn.png) ;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -130,12 +136,11 @@ body{
     .secthree-right{margin-left: 0;}
     .qhtwo-list li{height: 318px;width: 50%;}
     .qhtwo-list span{font-size: 18px;}
-    .customers-box{background-size:68% 64%;}
     .banner-box li{background-position: right bottom;}
     .one-wz1{width: 85%;margin-top: 50%;}
     .footer-box h1{font-size: 24px;}
     .footer-list h1{font-size: 16px;}
-    .customers-box{background-size:89% 37%;}
+    .customers-box{background-size:306px 300px;}
  }
 @media (max-width: 479px) {
     .qhtwo-list li{height: 250px;}

@@ -91,6 +91,8 @@ a.color-333:hover, .hover-red:hover {
     top: 0;
     z-index: 9999;
 }
+.nav-listbox a{color: #fff;}
+.nav-listbox .active a{border-bottom: 2px solid #fff;padding-bottom: 10px;}
 .nav-listbox img{margin-top: 18px;float: left;}
 .nav-listbox ul{overflow: hidden;float: right;}
 .nav-listbox li{font-size: 0.18rem;color: #fff;margin-right: 12%;float: left;line-height:90px;font-size: 18px;}
