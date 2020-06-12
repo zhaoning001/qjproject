@@ -37,7 +37,7 @@ body{
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: all .6s ease;background: url("/qjproject/themes/images/index/listbg.png") no-repeat;background-size: cover;
+    transition: all .6s ease;background: url("themes/images/index/listbg.png") no-repeat;background-size: cover;
     opacity: 0;
 }
 .qhtwo-list img{width: 68px;height: 65px;display: block;}
@@ -103,7 +103,7 @@ body{
 }
 .customers-box{
     padding: 1% 0;
-    background-image:url("/qjproject/themes/images/index/logoiocn.png") ;
+    background-image:url("themes/images/index/logoiocn.png") ;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 784px 719px;
