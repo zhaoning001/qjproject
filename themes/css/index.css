@@ -106,14 +106,21 @@ body{
     background-image:url("/themes/images/index/logoiocn.png") ;
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: 784px 719px;
+    background-size: 784px 719px; 
 }
 
 /* 关于我们 */
 .process{width: 100%;height: 118px;background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));margin-top: 10px;}
 .process ul{width: 100%;overflow: hidden;}
 .process ul li{width: 20%;float: left;}
+.process ul li  img{display: block;width:19%;margin: 30px auto 12px;}
 .process ul li p{font-size: 12px;color: #fff;width: 100%;text-align: center;margin-top: 12px;}
+.adve-box{width: 100%;position: relative;}
+.adve{width: 80%;}
+.adve-wzbox{width: 444px;height: 566px;background: url(/themes/images/about/adveimg.png) no-repeat;background-size: cover;position: absolute;top: 5%;left: 65%;}
+.adve-list{width: 80%;float: right;margin-bottom:30px;margin-right: 3%;}
+.adve-list span{width: 160px;height: 40px;background: #fff;text-align: center;line-height:40px;display: block;font-size: 20px;color: #00468F;font-weight: bold;margin-bottom: 16px;;}
+.adve-list p{font-size: 16px;color: #fff;line-height: 20px;}
 @media (max-width: 768px) { 
     .custom-box li{width:30%;margin:1%;height: 55px;margin: 1.5%;}
     .custom-box li img{max-width: 90%;}
