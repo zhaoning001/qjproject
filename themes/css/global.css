@@ -205,6 +205,8 @@ a.color-333:hover, .hover-red:hover {
 .professional-box h2{font-size: 16px;color: #fff;text-align: center;margin-top: 20px;}
 .professional-box a{display: block;width: 160px;height: 50px;margin: 32px auto 0;}
 .professional-box a button{width: 100%;height: 100%;background: #fff;color: #004EA0;font-size:16px;}
+.banner-topbox{width: 100%;margin-top: 90px;position: relative;}
+.banner-topbox img{width: 100%;}
 @media (max-width: 768px) { 
 .container{padding: 0 2%;}
 	.threettitltow{font-size: 18px;}
