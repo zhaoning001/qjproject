@@ -54,17 +54,17 @@ var footertemplate=' <div class="container">'+
 '                <h1 class="wow fadeInUp animated"  data-wow-offset="200" data-wow-delay="0s">青京科技-致力于打造一站式品牌建设推广服务商！</h1>'+
 '                <div class="footer-nrbox row">'+
 '                    <div class="wow footer-list col-lg-3 col-lg-offset-1 col-md-offset-1 col-md-3 col-sm-4 col-xs-9 fadeInUp animated" data-wow-offset="10" data-wow-delay="0.1s">'+
-'                        <h1 style="background-image: url(themes/images/footer1.png);">电话/TEL</h1>'+
+'                        <h1 style="background-image: url(/themes/images/footer1.png);">电话/TEL</h1>'+
 '                        <span>17600288215(7*24)</span>'+
 '                        <span>15901278749(工作日)</span>'+
 '                    </div>'+
 '                    <div class="wow footer-list col-lg-3 col-lg-offset-1 col-md-offset-1  col-md-3 col-sm-4 col-xs-12 fadeInUp animated"  data-wow-offset="10" data-wow-delay="0.2s">'+
-'                        <h1 style="background-image: url(themes/images/footer2.png);">QQ咨询/TEL</h1>'+
+'                        <h1 style="background-image: url(/themes/images/footer2.png);">QQ咨询/TEL</h1>'+
 '                        <span>40075537（售前）</span>'+
 '                        <span>1491202268（售后）</span>'+
 '                    </div>'+
 '                    <div class="wow footer-list col-lg-3 col-lg-offset-1 col-md-offset-1 col-md-3 col-sm-4 col-xs-12 fadeInUp animated" data-wow-offset="10" data-wow-delay="0.3s">'+
-'                        <h1 style="background-image: url(themes/images/footer3.png);" class="email">邮箱/E-mail</h1>'+
+'                        <h1 style="background-image: url(/themes/images/footer3.png);" class="email">邮箱/E-mail</h1>'+
 '                        <span>40075537@qq.com</span>'+
 '                        <span>1491202268@qq.com</span>'+
 '                    </div> '+
