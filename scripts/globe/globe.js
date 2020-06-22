@@ -2,7 +2,7 @@ $(function(){
 //    动态头部  
  var toptempleat=' <div class="nav-listbox">'+
  '            <div class="container">'+
- '                <img src="themes/images/logo.png" alt="">'+
+ '                <img src="/themes/images/logo.png" alt="">'+
  '                <ul class="col-lg-6 col-md-7 col-sm-8 hidden-xs navlistul">'+
  '                    <li> <a href="javascript:;"> 首页</a></li>'+
  '                    <li> <a href="javascript:;"> 关于</a></li>'+
