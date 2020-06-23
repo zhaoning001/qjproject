@@ -62,8 +62,8 @@
 .barndplan-box li img{height: 62px;;display: block;margin: 30% auto 7%;}
 .barndplan-box li span{display: block;font-size: 16px;color: #fff;text-align: center;margin-bottom: 8%;}
 .barndplan-box li em{width: 70%;text-align:center;margin:0 auto;font-size: 12px;line-height: 24px;color: #fff;display: block;}
-.brand-problem h1{font-size: 40px;text-align: center;margin-top: 5%;}
-.brand-problem h2{font-size: 20px;text-align: center;margin-top: 2%;}
+.brand-problem h1{font-size: 40px;text-align: center;margin-top: 5%; color: #00458E;}
+.brand-problem h2{font-size: 20px;text-align: center;margin: 2% 0;}
 .brand-problem ul{background: #fff;}
 .brand-problem li{height: 190px;}
 .brand-problem li div{width: 50%;height: 100%;}
@@ -113,4 +113,15 @@
 .station-qybox ul li img{height: 80px;display: block;margin: 88px auto 30px;}
 .station-qybox ul li h3{font-size: 14px;font-weight: bold;margin-bottom: 16px;text-align: center;}
 .station-qybox ul li p{font-size: 12px;line-height: 16px;width: 90%;margin: 0 auto;text-align: center;}
+.mark-wz{left: 50%;}
+.mark-why h2{font-size: 38px;margin-bottom: 5%;font-weight: bold;}
+.markwhy-nav{width: 400px;height: 174px;background: #F5F5F5;border-top:1px solid #fff;position: relative;
+float: left;margin-right: 88px;}
+.markwhy-nav h1{font-size: 22px;color: #00458E;text-align: center;margin: 10% 0 5%;}
+.markwhy-nav p{font-size:14px;width: 63%;margin: 0 auto;line-height: 20px;}
+.markwhy-nav span{display: block;width: 96px;height: 96px;background: #7698FC;border-radius: 50%;border-top: 1px solid #7698FC;position: absolute;left: -10%;top: 20%;}
+.markwhy-nav em{display: block;width: 80px;height: 80px;background: #395FE4;border-radius: 50%;margin:7px auto 0;font-size: 56px;color: #fff;text-align: center;line-height: 80px;}
+.brand-problemoytbox{width: 80%;margin:0 auto;}
+
+
 
