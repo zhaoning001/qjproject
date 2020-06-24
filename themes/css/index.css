@@ -110,6 +110,7 @@ body{
 }
 
 /* 关于我们 */
+.bannertop-box{position: relative;}
 .process{width: 100%;height: 118px;background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));margin-top: 10px;}
 .process ul{width: 100%;overflow: hidden;}
 .process ul li{width: 20%;float: left;}
@@ -121,6 +122,7 @@ body{
 .adve-list{width: 80%;float: right;margin-bottom:30px;margin-right: 3%;}
 .adve-list span{width: 160px;height: 40px;background: #fff;text-align: center;line-height:40px;display: block;font-size: 20px;color: #00468F;font-weight: bold;margin-bottom: 16px;;}
 .adve-list p{font-size: 16px;color: #fff;line-height: 20px;}
+#bannerwz{width: 422px !important;position: absolute;left: 40%;top: 30%;}
 @media (max-width: 768px) { 
     .custom-box li{width:30%;margin:1%;height: 55px;margin: 1.5%;}
     .custom-box li img{max-width: 90%;}

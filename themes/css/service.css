@@ -122,5 +122,30 @@ float: left;margin-right: 72px;margin-bottom: 5%;}
 .markwhy-nav span{display: block;width: 96px;height: 96px;background: #7698FC;border-radius: 50%;border-top: 1px solid #7698FC;position: absolute;left: -10%;top: 20%;}
 .markwhy-nav em{display: block;width: 80px;height: 80px;background: #395FE4;border-radius: 50%;margin:7px auto 0;font-size: 56px;color: #fff;text-align: center;line-height: 80px;}
 .brand-problemoytbox{width: 80%;margin:0 auto;}
+.outadvantage{width: 100%;height: 840px;background: url(/themes/images/service/markiocnbg.png) no-repeat;background-size: cover;border-top: 1px solid #fff;}
+.outadvantage-nrbox{width: 80%;margin: 0 auto;}
+.outadvantage h1{font-size: 44px;color: #fff;text-align: center;margin: 5% 0 2%;}
+.outadvantage h2{font-size: 20px;color: #fff;text-align: center;margin: 0 0 10%;}
+.outadvantage ul{width: 100%;overflow: hidden;}
+.outadvantage ul li{width: 15%;margin-right: 2%;border: 1px solid #fff;height: 368px;float: left;}
+.outadvantage ul li:last-child{margin-right: 0;}
+.outadvantage ul li img{display: block;height: 60px;margin: 60px auto 32px;}
+.outadvantage ul li span{font-size: 22px;display: block;width: 80%;margin: 0 auto;color: #fff;text-align: center}
+.outadvantage ul li p{font-size: 16px;width: 80%;margin: 32px auto 0;color: #fff;line-height: 28px;}
+.register h1{color: #00458E;font-size: 38px;text-align: center;margin: 5% 0 2% ;font-weight: bold;}
+.register h2{font-size: 38px;text-align: center;margin:2% 0 10%;}
+.register li{width: 14.2%;float: left;}
+.register li img{height: 124px;margin-bottom: 5%;}
+.register li p{font-size: 20px;font-weight: bold;margin-top: 10%;}
+.register li p em{display: inline-block;width: 15px;height: 15px;background: #2A4DFF;border-radius: 50%;margin-right: 10px;}
+.ref-jt{width: 24px;height: 38px !important;margin-top: 57px;margin-left: 27px;}
+
+
+
+
+
+
+
+
 
 

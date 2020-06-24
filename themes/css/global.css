@@ -91,12 +91,18 @@ a.color-333:hover, .hover-red:hover {
     top: 0;
     z-index: 9999;
 }
-.nav-listbox a{color: #fff;}
-.nav-listbox .active a{border-bottom: 2px solid #fff;padding-bottom: 10px;}
+.navlistul a{color: #fff;}
+.navlistul > .active > a{border-bottom: 2px solid #fff;padding-bottom: 10px;}
 .nav-listbox img{margin-top: 18px;float: left;}
-.nav-listbox ul{overflow: hidden;float: right;}
-.nav-listbox li{font-size: 0.18rem;color: #fff;margin-right: 12%;float: left;line-height:90px;font-size: 18px;}
-.nav-listbox li:last-child{margin-right: 0;}
+.navlistul{float: right;}
+.navlistul > li{font-size: 0.18rem;color: #fff;margin-right: 12%;float: left;line-height:90px;font-size: 18px;position: relative;}
+.navlistul > li:last-child{margin-right: 0;}
+.navlistul > li:hover .nav-xial {display: block;}
+.navlistul > li:hover >a{    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;}
+.nav-xial{position: absolute;bottom: -171px;left: -31px;width:107px;background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));padding: 16px;display: none;}
+.nav-xial li{height: 28px;line-height: 28px;}
+.nav-xial li a{height: 28px;line-height: 28px;color: #fff;text-align: center;font-size: 12px;}
 
 .nav-moblie{float: right;margin-right: 2%;margin-top: 35px;height: 18px;}
 .nav-moblie a{display: block;width: 30px;height: 2px;background: #fff;margin-top:6px;transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;}

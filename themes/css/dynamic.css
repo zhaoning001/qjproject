@@ -1,0 +1,28 @@
+.banner-wz{width: 40%;position: absolute;top: 30%;right: 5%;}
+.banner-wz h1{font-size: 60px;font-weight: bold;color: #fff;}
+.banner-wz h2{font-size: 16px;margin-top: 16px;font-weight: bold;color: #fff;}
+.banner-wz p{font-size: 16px;line-height: 24px;margin-top: 40px;color: #fff;width: 80%;}
+.contactus-banner img{width: 100%;}
+.dynamic-list{width: 100%;}
+.dynamic-list li:nth-child(2n+2){background: #F5F5F5;}
+.dynamic-list li{overflow: hidden;width: 100%;background: #fff;height: 300px;}
+.dynamic-list li a{width: 100%;height: 100%;}
+.dynamic-list li:hover{background: linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));}
+.dynamic-list li:hover .time h1{color: #fff;}
+.dynamic-list li:hover .time h2{color: #fff;}
+.dynamic-list li:hover .wzconten h1{color: #fff;}
+.dynamic-list li:hover .wzconten p{color: #fff;}
+.time{width: 20%;float: left;margin-top: 7%;}
+.time h1{font-size: 60px;text-align: center;transition: all .6s ease;}
+.time h2{font-size: 28px;text-align: center;margin-top: 6%;transition: all .6s ease;}
+.wzconten{margin-top: 7%;width: 40%;float: left;}
+.wzconten h1{font-size: 24px;transition: all .6s ease;}
+.wzconten p{font-size: 14px;line-height: 28px;margin-top: 3%;transition: all .6s ease;}
+.dynamic-img{width: 30%;float: right;margin-top: 0.5%;}
+.dynamic-img img{width: 100%;}
+
+
+
+
+
+
