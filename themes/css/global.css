@@ -218,6 +218,12 @@ a.color-333:hover, .hover-red:hover {
 	.threettitltow{font-size: 18px;}
 	.footer-box h1{font-size: 24px;}
     .footer-list h1{font-size: 16px;}
+    .professional-box h1{font-size: 28px;}
+    .professional-box a{width: 140px;height: 40px;}
+    .banner-wz{top: 14% !important;width: 77%!important;}
+    .banner-wz h1{font-size: 40px !important;}
+    .banner-wz p{margin-top: 20px !important;width: 80%!important;}
+    .banner-topbox img{height: 200px;}
  }
  @media (max-width: 479px) {
     .footer-box h1{font-size: 16px;margin-bottom: 0;}
@@ -225,20 +231,33 @@ a.color-333:hover, .hover-red:hover {
     .footer-list span{font-size: 12px;}
     .footer-list {padding: 0 10px;} */
     .footer-list{margin-left: 3%;margin-top: 5%;}
-    .footer-list h1{background-size:17px 20px;line-height: 20px;}
+    .footer-list h1{background-size:17px 20px;line-height: 20px;float: left;}
 	.footer-nrbox{margin-top: 0;}
-	.email{background-size:24px 20px !important;}
+    .email{background-size:24px 20px !important;}
+    .footer-list span{float: left;margin-top: 2px; margin-left: 12px;}
+    .banner-wz{top: 14% !important;width: 77%!important;}
+    .banner-wz h1{font-size: 20px !important;font-size: 12px;}
+    .banner-wz p{margin-top: 10px !important;width: 80%!important;}
+
 }
 @media (min-width: 768px) and (max-width: 991px){ 
 	.footer-box h1{font-size: 26px;}
     .footer-list h1{font-size: 16px;}
 
     .nav-listbox li{font-size: 14px;margin-right: 12%;}
+    .professional-box h1{font-size: 28px;}
+    .professional-box a{width: 140px;height: 40px;}
+    .banner-wz{top: 14% !important;}
+    .banner-wz h1{font-size: 40px !important;}
+    .banner-wz p{margin-top: 30px !important;width: 80%!important;}
  }
 @media (min-width: 992px)and (max-width: 1199px){ 
     .nav-listbox li{font-size: 16px;margin-right: 12%;}
     .footer-box h1{font-size: 32px;}
     .footer-list h1{font-size: 18px;}
+    .professional-box h1{font-size: 32px;}
+    .banner-wz{top: 19%!important;}
+    .banner-wz h1{font-size: 50px !important;}
  }
 @media (min-width: 1200px) { 
 	.container{width: 1200px;}

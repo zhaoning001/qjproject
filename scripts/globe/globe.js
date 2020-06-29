@@ -65,7 +65,7 @@ $(function () {
    var footertemplate = ' <div class="container">' +
       '                <h1 class="wow fadeInUp animated"  data-wow-offset="200" data-wow-delay="0s">青京科技-致力于打造一站式品牌建设推广服务商！</h1>' +
       '                <div class="footer-nrbox row">' +
-      '                    <div class="wow footer-list col-lg-3 col-lg-offset-1 col-md-offset-1 col-md-3 col-sm-4 col-xs-9 fadeInUp animated" data-wow-offset="10" data-wow-delay="0.1s">' +
+      '                    <div class="wow footer-list col-lg-3 col-lg-offset-1 col-md-offset-1 col-md-3 col-sm-4 col-xs-12 fadeInUp animated" data-wow-offset="10" data-wow-delay="0.1s">' +
       '                        <h1 style="background-image: url(/themes/images/footer1.png);">电话/TEL</h1>' +
       '                        <span>17600288215(7*24)</span>' +
       '                        <span>15901278749(工作日)</span>' +
