@@ -23,6 +23,32 @@
 .banner-wz h2{font-size: 16px;margin-top: 16px;font-weight: bold;}
 .banner-wz p{font-size: 16px;line-height: 24px;margin-top: 40px;}
 
+@media (max-width: 1200px) { 
+
+}
+@media (max-width: 1199px){ 
+    .dynamic-list li{height: 240px;}
+    .time{margin-top: 5%;}
+    .wzconten{margin-top: 5%;}
+    .contactus-subject h1{font-size: 30px;}
+    .contactus-subject h2{font-size: 38px;}
+ }
+@media (max-width: 991px){ 
+    
+}
+@media (max-width: 768px) { 
+    .time{margin-top: 3%;width: 100%;}
+    .wzconten{margin-top: 2%;width: 100%;}
+    .dynamic-list li{height: auto;}
+    .wzconten h1{text-align: center;}
+    .dynamic-img{width: 80%;margin: 20px auto;float: none;}
+    .time h2{margin-top: 2%;}
+    .time h1{font-size: 40px;}
+    .wzconten p{width: 80%;margin: 2% auto;}
+} 
+@media (max-width: 479px) {
+
+}
 
 
 

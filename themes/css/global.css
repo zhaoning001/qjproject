@@ -223,25 +223,29 @@ a.color-333:hover, .hover-red:hover {
     .professional-box a{width: 130px;height: 30px;font-size: 14px;margin-top: 20px;}
     .professional-box a button{font-size: 14px;}
     .banner-wz{top: 14% !important;width: 77%!important;}
-    .banner-wz h1{font-size: 40px !important;}
-    .banner-wz p{margin-top: 20px !important;width: 80%!important;}
+    .banner-wz h1{font-size: 30px !important;}
+    .banner-wz p{margin-top: 20px !important;width: 80%!important;font-size: 14px !important;}
     .banner-topbox img{height: 200px;}
+    .banner-wz{width: 55%;}
+    .contactus-banner img{height: 250px;}
+    .banner-wz{left: 13% !important;}
+    .footer-list{margin-left: 3%;margin-top: 5%;}
+    .footer-list h1{background-size:17px 20px;line-height: 20px;float: left;width:122px;}
+    .footer-nrbox{margin-top: 0;}
+    .footer-list span{float: left;margin-top: 2px; margin-left: 12px;}
+    
  }
  @media (max-width: 479px) {
     .footer-box h1{font-size: 16px;margin-bottom: 0;}
     /* .footer-list h1{font-size: 12px;}
     .footer-list span{font-size: 12px;}
     .footer-list {padding: 0 10px;} */
-    .footer-list{margin-left: 3%;margin-top: 5%;}
-    .footer-list h1{background-size:17px 20px;line-height: 20px;float: left;width:122px;}
-	.footer-nrbox{margin-top: 0;}
+
     .email{background-size:24px 20px !important;}
-    .footer-list span{float: left;margin-top: 2px; margin-left: 12px;}
     .banner-wz{top: 14% !important;width: 77%!important;}
     .banner-wz h1{font-size: 20px !important;font-size: 12px;}
     .banner-wz p{margin-top: 10px !important;width: 80%!important;}
     .professional-box{height: 168px;}
-
 }
 @media (min-width: 768px) and (max-width: 991px){ 
 	.footer-box h1{font-size: 26px;}
