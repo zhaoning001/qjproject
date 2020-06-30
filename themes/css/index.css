@@ -122,7 +122,7 @@ body{
 .adve-list{width: 80%;float: right;margin-bottom:30px;margin-right: 3%;}
 .adve-list span{width: 160px;height: 40px;background: #fff;text-align: center;line-height:40px;display: block;font-size: 20px;color: #00468F;font-weight: bold;margin-bottom: 16px;;}
 .adve-list p{font-size: 16px;color: #fff;line-height: 20px;}
-#bannerwz{width: 422px !important;position: absolute;left: 40%;top: 30%;}
+#bannerwz{width: 422px !important;position: absolute;left: 38%;top: 30%;}
 @media (max-width: 768px) { 
     .custom-box li{width:30%;margin:1%;height: 55px;margin: 1.5%;}
     .custom-box li img{max-width: 90%;}
@@ -137,8 +137,8 @@ body{
     .secthree-left h1{font-size: 16px;line-height: 36px;}
     .secthree-left h2{font-size: 16px;line-height: 36px;}
     .secthree-left em{font-size: 14px;padding-left: 6%;width: 90%;}
-    .qh-two h1{font-size: 16px;line-height: 20px;}
-    .qh-two h2{font-size: 16px;line-height: 20px;}
+    .qh-two h1{font-size: 18px;line-height: 30px;}
+    .qh-two h2{font-size: 18px;line-height: 30px;}
     .qh-two p{font-size: 14px;line-height: 28px;}
     .buttonbox div{transform: scale(0.8);}
     .secthree-left{margin-left: -100%;}
@@ -166,6 +166,9 @@ body{
     .adve-box{height: 420px;}
     .adve-box img{display: none;}
     .professional-box{margin-top: 50px;}
+    .adve-list span{height: 34px;line-height: 34px;}
+    .process ul li p{line-height: 20px;}
+    .process ul li img{width: 40%;}
 }
 @media (min-width: 768px) and (max-width: 991px){ 
     .custom-box li{width: 23%;height: 90px;margin: 1%;}
