@@ -105,7 +105,7 @@
 .station-fwimg{width: 45%;}
 .station-fwimg img{width: 100%;}
 .barndplan-box ul li p{font-size: 16px;color: #fff;margin-top: 14%;text-align: center;}
-.station-qybox{width: 100%;height: 1040px;background: url(/themes/images/service/stationqy.png) no-repeat;background-size: cover;border-top: 1px solid #fff;}
+.station-qybox{width: 100%;height: 1040px;background: url(/themes/images/service/stationqy.png) no-repeat;background-size: cover;border-top: 1px solid #fff;overflow: hidden;}
 .station-qybox h1{font-size: 34px;color: #fff;text-align: center;margin: 10% 0 2%;}
 .station-qybox h2{font-size: 44px;color: #fff;text-align: center;}
 .station-qybox ul{width: 100%;overflow: hidden;margin-top: 15%;}
@@ -142,6 +142,84 @@ float: left;margin-right: 72px;margin-bottom: 5%;}
 
 
 
+@media (max-width: 1200px) { 
+
+}
+@media (max-width: 1199px){ 
+    .service-box h1{font-size: 19px;margin-top: 0;}
+    .service-box h2{font-size: 40px;}
+    .service-box p{margin-top:19px;}
+
+ }
+@media (max-width: 991px){ 
+    .station-qybox h1{font-size: 27px;}
+    .station-qybox h2{font-size: 36px;}
+    .service-box h2{font-size: 30px;}
+    .station-qybox ul li{width: 30%;margin-bottom: 2%;}
+    .station-fwimg {display:none;}
+    .station-fw{width: 100%;}
+    .barndplan-box li img{height: 37px;margin:18% auto 7%;}
+    .barndplan-box ul li p{font-size: 14px;}
+    .barndplan-box{height: 160px;}
+    .barndplan-box li span{font-size: 14px;margin-bottom: 2%;}
+    .barndplan-box li{width: 23%;margin-right: -4%;}
+    .brand-problem h1{font-size: 30px;}
+    .brand-problem h2{font-size: 28px;}
+}
+@media (max-width: 768px) { 
+    .service-box h1{font-size:20px;text-align: center;}
+    .service-box h2{font-size:24px;margin-top: 10px;text-align: center;}
+    .service-box{padding: 4% 0!important;}
+    .barndplan-box li img{height: 40px;}
+    .barndplan-box ul li p{font-size: 12px;}
+    .barndplan-box{height: 128px;}
+    .station-fw ul li{font-size: 12px;width: 23%;}
+    .service-box p{margin-top: 10px;font-size: 14px;line-height: 24px;text-align: center;}
+    .adv-img{display: none;}
+    .adv-wz{width: 100%;margin:  5% 0;margin-bottom: 0;}
+    .adv-titleez h1{font-size: 20px;text-align: center;}
+    .adv-titleez p{font-size: 14px;text-align: center;margin-top: 1%;}
+    .advwz-title em{width: 6px;height: 45px;}
+    .adv-titleez{width: 97%;}
+    .advantage ul{margin: 3% 0 0 0;}
+    .advantage li h2{font-size: 18px;}
+    .advantage li h3{font-size: 12px;margin-top: 1%;}
+    .advantage li{padding-bottom: 2%;float: left;border: none;width: 33%;}
+    .advantage li em{display: none;}
+    .advwz-title em{display: none;}
+    .service-box em{margin: 0 auto;height: 3px;margin-top:3%;}
+    .station-fw ul{margin-top:3%;}
+    .station-qybox ul{margin-left: 3%;}
+    .station-qybox h1{font-size: 20px;}
+    .station-qybox h2{font-size: 24px;}
+    .station-qybox ul li img{height: 55px;margin:58px auto 30px;}
+    .station-qybox ul li{height: 260px;}
+    .barnd-nrbox{width: 100%;}
+    .towbarndplan-box{height: 152px;}
+    .barnd-nrbox h1{width: 64%;margin: 0 auto;}
+    .barndlist-nrlist h1{background-size: 32px auto;}
+    .brand-problem h1{font-size: 20px;}
+    .brand-problem h2{font-size:14px;}
+    .brand-problem li{height: 180px;}
+} 
+@media (max-width: 479px) {
+    .barndplan-box ul li p{line-height: 16px;}
+    station-qybox ul li img{height: 55px;margin:58px auto 30px;}
+    .station-qybox ul li{height: 260px;width: 45%;}
+    .station-qybox ul li{margin-right: 3%;}
+    .station-qybox ul{margin-left: 3%;}
+    .towbarndplan-box li{width: 48%;margin-top: 10px;margin-right: 4%;}
+    .towbarndplan-box li:nth-child(2n+2){margin-right: 0;}
+    .towbarndplan-box li img{margin: 0;float: left;margin-right: 10px;}
+    .towbarndplan-box li span{text-align: left;float: right;width:69%;}
+    .towbarndplan-box li em{width: 69%;text-align: left;float: right;}
+    .barndplan-box li img{height: 31px;}
+    .towbarndplan-box{height: auto;padding: 5px 0;}
+    .barnd-nrbox h1{width: 65%;margin: 0 auto;}
+    .brand-problem li{height: 140px;}
+    .brandpro-wz h3{font-size: 16px;margin-top: 10%;}
+
+}
 
 
 

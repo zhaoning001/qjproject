@@ -126,8 +126,9 @@ body{
 @media (max-width: 768px) { 
     .custom-box li{width:30%;margin:1%;height: 55px;margin: 1.5%;}
     .custom-box li img{max-width: 90%;}
-    .threetitle{font-size: 16px;}
-    .threettitltow{font-size: 18px;}
+    .qh-two h2{margin: 0;}
+    .threetitle{font-size: 20px;}
+    .threettitltow{font-size: 20px;}
     .qh-three ul li{height: 342px;}
     .qh-three ul{width: 90%;margin: 2%auto 0;}
     .qh-three ul li{margin-bottom: 20px;}
@@ -137,8 +138,9 @@ body{
     .secthree-left h1{font-size: 16px;line-height: 36px;}
     .secthree-left h2{font-size: 16px;line-height: 36px;}
     .secthree-left em{font-size: 14px;padding-left: 6%;width: 90%;}
-    .qh-two h1{font-size: 18px;line-height: 30px;}
-    .qh-two h2{font-size: 18px;line-height: 30px;}
+    .qh-two {padding: 1% 0;}
+    .qh-two h1{font-size: 20px;line-height: 30px;text-align: center;}
+    .qh-two h2{font-size: 20px;line-height: 30px;text-align: center;}
     .qh-two p{font-size: 14px;line-height: 28px;}
     .buttonbox div{transform: scale(0.8);}
     .secthree-left{margin-left: -100%;}
@@ -173,7 +175,6 @@ body{
 @media (min-width: 768px) and (max-width: 991px){ 
     .custom-box li{width: 23%;height: 90px;margin: 1%;}
     .customers-box{background-size:40% 37%;}
-    .nav-listbox li{font-size: 16px;margin-right: 8%;}
     .qh-three ul li{height: 342px;}
     .secthree-right{padding: 22px;}
     .secthree-right ul li{width: 50%;}

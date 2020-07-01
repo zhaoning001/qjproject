@@ -13,6 +13,25 @@
 
 
 
+@media (max-width: 1200px) { 
+
+}
+@media (max-width: 1199px){ 
+    .nav-listbg li{font-size: 18px;}
+ }
+@media (max-width: 991px){ 
+    .nav-listbg li{font-size: 16px;}
+    .case-listbox li{margin-bottom: 2%;}
+
+}
+@media (max-width: 768px) { 
+    .nav-listbg li{font-size: 14px;}
+    .case-listbox li{margin-bottom: 2%;} 
+} 
+@media (max-width: 479px) {
+    .nav-listbg li{font-size: 12px;margin-left: 6%;}
+    .case-listbox li{padding-left: 0;margin-bottom: 5%;}
+}
 
 
 
