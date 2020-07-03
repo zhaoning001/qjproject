@@ -25,11 +25,11 @@
     </div>
     <div class="nav-listbg">
         <div class="container">
-            <ul class="clearfix">
-                <li>品牌网站</li>
-                <li>视觉设计</li>
-                <li>商标设计</li>
-                <li>微信小程序</li>
+            <ul class="nav-listul clearfix">
+                <li class="nav-active"><a href="javascript:;">品牌网站</a></li>
+                <li><a href="javascript:;">视觉设计</a></li>
+                <li><a href="javascript:;">商标设计</a></li>
+                <li><a href="javascript:;">微信小程序</a></li>
             </ul>
         </div>
     </div>
@@ -37,24 +37,29 @@
         <div class="">
             <ul class="case-listbox clearfix">
                 <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.1s">
+                    <a href="/pages/casedetali.html">
                     <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
+                    <p>良策世纪品牌网站建设</p></a>
                 </li>
                 <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.2s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
+                    <a href="/pages/casedetali.html">
+                        <img src="/themes/images/case/caseimg.png" alt="">
+                        <p>良策世纪品牌网站建设</p></a>
                 </li>
                 <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.3s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
+                    <a href="/pages/casedetali.html">
+                        <img src="/themes/images/case/caseimg.png" alt="">
+                        <p>良策世纪品牌网站建设</p></a>
                 </li>
                 <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.4s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
+                    <a href="/pages/casedetali.html">
+                        <img src="/themes/images/case/caseimg.png" alt="">
+                        <p>良策世纪品牌网站建设</p></a>
                 </li>
                 <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.5s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
+                    <a href="/pages/casedetali.html">
+                        <img src="/themes/images/case/caseimg.png" alt="">
+                        <p>良策世纪品牌网站建设</p></a>
                 </li>
            </ul>
         </div>
@@ -68,5 +73,8 @@
 <script src="/scripts/globe/globe.js"></script>
 <script>
     new WOW().init();
+    $(".nav-listul li").click(function(){
+        $(this).addClass("nav-active").siblings().removeClass("nav-active")
+    })
 </script>
 </html>

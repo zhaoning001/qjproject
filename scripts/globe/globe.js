@@ -1,4 +1,5 @@
 $(function () {
+
    //    动态头部  
    var toptempleat = ' <div class="nav-listbox">' +
       '            <div class="container">' +
@@ -97,7 +98,7 @@ $(function () {
    $(".liac_smziy2").click(function () {
       if (flag == 0) {
          $(".smnav_xial1").animate({
-            height: "185px"
+            height: "236px"
          }, 500)
          flag = 1
       } else {
@@ -111,7 +112,7 @@ $(function () {
    $(".liac_smziy1").click(function () {
       if (flagg == 0) {
          $(".smnav_xial2").animate({
-            height: "185px"
+            height: "94px"
          }, 500)
          flagg = 1
       } else {
@@ -122,4 +123,57 @@ $(function () {
       }
    })
    $("head").append('<link rel="shortcut icon" href="/themes/images/favicon.png" type="image/x-icon">')
+   $("body").append(' <div class="zhezbox">'+
+   '         <div class="demandbox">'+
+   '             <h1>需求提交</h1>'+
+   '             <input type="text" name="" id="UserName">'+
+   '             <input type="text" name="" id="PhoneNum">'+
+   '             <textarea name="" id="Usenr" cols="30" rows="10"></textarea>'+
+   '             <div class="button-box">'+
+   '                 <button>立即提交</button>'+
+   '                 <button>关闭</button>'+
+   '             </div>'+
+   '         </div>'+
+   '    </div>')
+   $("body").append('<ul class="sidebar">'+
+   '        <li><img src="/themes/images/sidebar1.png" alt=""><p>13269835962</p></li>'+
+   '        <li><img src="/themes/images/sidebar2.png" alt=""><div class="wx-img"></div></li>'+
+   '        <li><img src="/themes/images/sidebar3.png" alt=""></li>'+
+   '        <li><img src="/themes/images/sidebar4.png" alt="" id="sidebar_top"></li>'+
+   '    </ul>')
+   window.onscroll = function() {scrollFunction()};
+   $("body").on("click","#sidebar_top",function(){
+      $('html, body').animate({scrollTop: 0}, 700)
 })
+	function scrollFunction() {
+      console.log(document.documentElement.scrollTop)
+	    if (document.documentElement.scrollTop >= 1) {
+	        $(".sidebar").css("right","0")
+	    } else {
+	        $(".sidebar").css("right","-100%")
+	    }
+	}
+		
+})
+
+
+var uitll = {
+   getdata: function(url, get, json, data, cache, async, success, error) {
+      $.ajax({
+         url:  url + 'time=' + new Date().getTime(),
+         type: get,
+         dataType: json,
+         data: data,
+         cache: cache,
+         async: async,
+         success: success,
+         error: error
+      });
+   },
+   getQueryString: function(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if(r != null) return(r[2]);
+      return null;
+   }
+}
