@@ -7,8 +7,8 @@ $(function () {
       '                <ul class="col-lg-6 col-md-7 col-sm-8 hidden-xs navlistul clearfix">' +
       '                    <li> <a href="/"> 首页</a></li>' +
       '                    <li> <a href="/pages/about.html"> 关于</a></li>' +
-      '                    <li> <a href="javascript:;"> 服务</a><ul class="nav-xial"><li><a href="/pages/servicestation.html"> 品牌网络建设</a></li><li><a href="/pages/servicebrand.html"> 品牌视觉设计</a></li><li><a href="/pages/servicewx.html"> 微信定制开发</a></li><li><a href="/pages/service.html"> 网络营销策划</a></li><li><a href="/pages/servicemark.html"> 知识产权注册</a></li></ul></li>' +
-      '                    <li> <a href="javascript:;"> 案例</a><ul class="nav-xial" style="bottom:-87px;"><li><a href="/pages/case.html"> 品牌网站建设</a></li><li><a href="javascript:;"> 品牌视觉设计</a></li></ul></li>' +
+      '                    <li> <a href="/pages/servicestation.html"> 服务</a><ul class="nav-xial"><li><a href="/pages/servicestation.html"> 品牌网络建设</a></li><li><a href="/pages/servicebrand.html"> 品牌视觉设计</a></li><li><a href="/pages/servicewx.html"> 微信定制开发</a></li><li><a href="/pages/service.html"> 网络营销策划</a></li><li><a href="/pages/servicemark.html"> 知识产权注册</a></li></ul></li>' +
+      '                    <li> <a href="/pages/case.html"> 案例</a></li>' +
       '                    <li> <a href="/pages/dynamic.html"> 动态</a></li>' +
       '                    <li> <a href="/pages/contactus.html"> 联系</a></li>' +
       '                </ul>' +
@@ -136,7 +136,7 @@ $(function () {
    '         </div>'+
    '    </div>')
    $("body").append('<ul class="sidebar">'+
-   '        <li><img src="/themes/images/sidebar1.png" alt=""><p>13269835962</p></li>'+
+   '        <li><img src="/themes/images/sidebar1.png" alt=""><p>17600288215</p></li>'+
    '        <li><img src="/themes/images/sidebar2.png" alt=""><div class="wx-img"><img src="/themes/images/contactus/wxxm.jpg"></div></li>'+
    '        <li class="sidebar-three"><img src="/themes/images/sidebar3.png" alt=""></li>'+
    '        <li><img src="/themes/images/sidebar4.png" alt="" id="sidebar_top"></li>'+

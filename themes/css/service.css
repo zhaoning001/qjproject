@@ -24,7 +24,7 @@
 .service-box ul li:hover span{color: #fff;}
 .service-box ul li:hover p{color: #fff;}
 .service-box ul li div{background: #F5F5F5;width: 100%;height: 100%;border-top: 1px solid #fff;transition: all .6s ease;}
-.service-box ul li span{font-size: 22px;color: #00458E;display: block;width: 100%;text-align: center;margin-top:30%;}
+.service-box ul li span{font-size: 22px;color: #00458E;display: block;width: 100%;text-align: center;margin-top:27%;font-weight: bold;}
 .service-box ul li p{width: 80%;display: block;margin: 28px auto 0;font-size: 14px;}
 .sec-box{width: 100%;height: 840px;background: url(/themes/images/service/seobanner.png) no-repeat;background-size: cover;border-top:1px solid  #fff;margin-top: 5%;}
 .sec-box h1{font-size: 40px;text-align: center;margin: 58px 0 34px;width: 100%;color: #fff;}
@@ -37,7 +37,7 @@
 .seowz-listbox em{display: block;width:16px;height:72px; background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));float: left;}
 .seo-nr{width: 94%;float: right;}
 .seo-nr h5{font-size: 18px;font-weight: bold;color: #000;}
-.seo-nr h6{font-size: 14px;margin-top: 8%;color: #000;}
+.seo-nr h6{font-size: 14px;margin-top: 5%;color: #000;}
 .adv-img,.adv-wz{width: 40%;margin-top: 15%;}
 .adv-img img{width: 100%;}
 .advwz-title em{width: 20px;height: 80px;float: left;background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));}
@@ -56,10 +56,10 @@
 .barndlist-nrlist{margin-bottom: 5%;}
 .barndlist-nrlist h1{font-size: 24px;padding-left: 50px;background-size: 42px auto;height: 42px;line-height: 42px;color: #000;background-repeat: no-repeat;background-position:left  center;} 
 .barndlist-nrlist h3{font-size: 14px;line-height: 24px;padding-left: 50px;font-weight: normal;margin-top: 10px;}
-.barndplan-box{width: 100%;height: 234px;background:linear-gradient(54deg,rgba(0,70,142,1),rgba(0,124,255,1));}
+.barndplan-box{width: 100%;height: 140px;background:linear-gradient(54deg,rgba(0,70,142,1),rgba(0,124,255,1));}
 .barndplan-box li{width: 15%;float: left;margin-right: 6%;}
 .barndplan-box li:last-child{margin-right: 0;}
-.barndplan-box li img{height: 62px;;display: block;margin: 30% auto 7%;}
+.barndplan-box li img{height: 49px;;display: block;margin: 33px auto 12px;}
 .barndplan-box li span{display: block;font-size: 16px;color: #fff;text-align: center;margin-bottom: 8%;font-weight: bold;}
 .barndplan-box li em{width: 70%;text-align:center;margin:0 auto;font-size: 12px;line-height: 24px;color: #fff;display: block;}
 .brand-problem h1{font-size: 40px;text-align: center;margin-top: 5%; color: #00458E;}
@@ -104,7 +104,7 @@
 .station-fw ul li{width: 22%;height:46px;background: #2A4DFF;color: #fff;font-size: 14px;text-align: center;line-height: 46px;float: left;margin-right: 2%;margin-bottom: 8px;}
 .station-fwimg{width: 45%;}
 .station-fwimg img{width: 100%;}
-.barndplan-box ul li p{font-size: 16px;color: #fff;margin-top: 14%;text-align: center;}
+.barndplan-box ul li p{font-size: 16px;color: #fff;margin-top: 12px;text-align: center;font-weight: bold;}
 .station-qybox{width: 100%;height: 1040px;background: url(/themes/images/service/stationqy.png) no-repeat;background-size: cover;border-top: 1px solid #fff;overflow: hidden;}
 .station-qybox h1{font-size: 34px;color: #fff;text-align: center;margin: 10% 0 2%;}
 .station-qybox h2{font-size: 44px;color: #fff;text-align: center;}
@@ -131,7 +131,7 @@ float: left;margin-right:10%;margin-bottom: 5%;}
 .outadvantage ul li:last-child{margin-right: 0;}
 .outadvantage ul li img{display: block;height: 60px;margin: 60px auto 32px;}
 .outadvantage ul li span{font-size: 22px;display: block;width: 80%;margin: 0 auto;color: #fff;text-align: center}
-.outadvantage ul li p{font-size: 16px;width: 80%;margin: 32px auto 0;color: #fff;line-height: 28px;}
+.outadvantage ul li p{font-size: 16px;width: 80%;margin: 16px auto 0;color: #fff;line-height: 28px;}
 .register h1{color: #00458E;font-size: 38px;text-align: center;margin: 5% 0 2% ;font-weight: bold;}
 .register h2{font-size: 38px;text-align: center;margin:2% 0 10%;}
 .register li{width: 14.2%;float: left;}
@@ -177,21 +177,22 @@ float: left;margin-right:10%;margin-bottom: 5%;}
     .station-fw{width: 100%;}
     .barndplan-box li img{height: 37px;margin:18% auto 7%;}
     .barndplan-box ul li p{font-size: 14px;}
-    .barndplan-box{height: 160px;}
+    .barndplan-box{height: 120px;}
     .barndplan-box li span{font-size: 14px;margin-bottom: 2%;}
     .barndplan-box li{width: 23%;margin-right: -4%;}
     .brand-problem h1{font-size: 30px;}
     .brand-problem h2{font-size: 28px;}
     .servicewe{padding-left: 15px !important;}
-    .service-box ul li span{margin-top: 20%;}
+    .service-box ul li span{margin-top: 20%;color: #fff;}
+    .service-box ul li p{color:#fff;}
     .sec-box h1{font-size: 30px;}
     .sec-box p{width: 50%;font-size: 16px;}
     .seo-nr{width: 90%;}
     .seo-nr h6{margin-top: 4%;}
     .seowz-listbox em{width: 10px;}
     .seo-img{width: 48%;margin-top: 10%;}
-    .wxjies-wz h1{font-size: 30px;}
-    .wxjies-wz p{line-height: 30px;margin-top: 5%;}
+    .wxjies-wz h1{font-size: 22px;}
+    .wxjies-wz p{line-height: 30px;margin-top: 5%;font-size: 14px;line-height: 24px;}
     .wxservice-box{height: 210px;}
     .wx-jiesao ul li p{font-size:24px;}
     .wx-jiesao ul li img{height: 114px;}
@@ -212,19 +213,18 @@ float: left;margin-right:10%;margin-bottom: 5%;}
     .service-box{padding: 4% 0!important;}
     .barndplan-box li img{height: 40px;}
     .barndplan-box ul li p{font-size: 12px;}
-    .barndplan-box{height: 128px;}
     .station-fw ul li{font-size: 12px;width: 23%;}
-    .service-box p{margin-top: 10px;font-size: 14px;line-height: 24px;text-align: center;}
+    .service-box p{margin-top: 10px;font-size: 12px;line-height: 24px;text-align: center;}
     .adv-img{display: none;}
     .adv-wz{width: 100%;margin:  5% 0;margin-bottom: 0;}
     .adv-titleez h1{font-size: 20px;text-align: center;}
-    .adv-titleez p{font-size: 14px;text-align: center;margin-top: 1%;}
+    .adv-titleez p{font-size: 12px;text-align: center;margin-top: 1%;}
     .advwz-title em{width: 6px;height: 45px;}
     .adv-titleez{width: 97%;}
     .advantage ul{margin: 3% 0 0 0;}
-    .advantage li h2{font-size: 18px;}
+    .advantage li h2{font-size: 14px;margin-top: 10px;}
     .advantage li h3{font-size: 12px;margin-top: 1%;}
-    .advantage li{padding-bottom: 2%;float: left;border: none;width: 33%;}
+    .advantage li{padding-bottom: 2%;float: left;border: none;width: 33%;border: 1px solid #efefef;}
     .advantage li em{display: none;}
     .advwz-title em{display: none;}
     .service-box em{margin: 0 auto;height: 3px;margin-top:3%;}
@@ -274,6 +274,7 @@ float: left;margin-right:10%;margin-bottom: 5%;}
     .register li img{height: 66px;}
     .register li img.ref-jt{height: 25px !important;width: 14px;}
     .register li p{font-size: 14px;}
+    .serviceindex li div{background :linear-gradient(0deg,rgba(0,69,142,1),rgba(0,124,255,1))!important;}
 } 
 @media (max-width: 479px) {
     .barndplan-box ul li p{line-height: 16px;}
@@ -281,21 +282,19 @@ float: left;margin-right:10%;margin-bottom: 5%;}
     .station-qybox ul li{height: 260px;width: 45%;}
     .station-qybox ul li{margin-right: 3%;}
     .station-qybox ul{margin-left: 3%;}
-    .towbarndplan-box li{width: 48%;margin-top: 10px;margin-right: 4%;}
+    .towbarndplan-box li{width: 48%;margin-top: 16px;margin-right: 4%;}
     .towbarndplan-box li:nth-child(2n+2){margin-right: 0;}
     .towbarndplan-box li img{margin: 0;float: left;margin-right: 10px;}
-    .towbarndplan-box li span{text-align: left;float: right;width:69%;}
-    .towbarndplan-box li em{width: 69%;text-align: left;float: right;}
-    .barndplan-box li img{height: 31px;}
-    .towbarndplan-box{height: auto;padding: 5px 0;}
+    .towbarndplan-box li span{text-align: left;float: right;width:75%;}
+    .towbarndplan-box li em{width: 75%;text-align: left;float: right;}
+    .barndplan-box li img{height: 31px;margin-right: 0;}
     .barnd-nrbox h1{width: 65%;margin: 0 auto;}
     .brand-problem li{height: 140px;}
-    .brandpro-wz h3{font-size: 16px;margin-top: 10%;}
+    .brandpro-wz h3{font-size: 14px;margin-top: 10%;}
     .service-box ul li{height: 268px;}
     .sec-wzbox{padding: 20px;width: 95%;}
     .sec-box{height: 550px;}
-    .advantage li h3{min-height:145px;}
-    .advantage li h2{height: 38px;}
+    .advantage li h3{height:32px;font-weight: normal;line-height: 16px;margin-top: 10px;width: 90%;}
     .wxservice-box li{width: 52%;}
     .banner-wz{top: 10%!important;}
     .wx-jiesao h1{font-size: 20px;}
@@ -312,6 +311,25 @@ float: left;margin-right:10%;margin-bottom: 5%;}
     .register li p em{width: 8px;height: 8px;margin-right: 0;}
     .register li img{height: 45px;}
     .register li img.ref-jt{height: 16px !important;width: 9px;margin-top:27px;}
+    .station-fw ul li{height: auto;}
+    .barndplan-box{height: 90px;}
+    .advantage li:last-child{padding-bottom: 2%;}
+    .barnd-nrbox{border: 1px solid #efefef;padding: 2% 0;}
+    .barndlist-nrlist h3{margin-top: 0;font-size: 12px;padding-left: 30px;width: 90%;}
+    .barnd-nrbox h1{font-size: 16px;}
+    .barndlist-nrlist{margin-bottom: 2%;}
+    .towbarndplan-box{height: auto;padding: 18px 0;}
+    .towbarndplan-box li span{height: auto;}
+    .brand-problem h1{margin-top: 0;}
+    .brand-problem h2{margin-bottom: 5%;}
+    .advantagebrand li h3{height: 50px;}
+    .advantagebrand li h2{height: 30px;}
+    .professional-box{margin-top:40px ;}
+    .wxservice-box{height: auto;}
+    .wxservice-box li img{margin: 10px auto;}
+    .wxservice-box ul{margin-top: 5%;}
+    .seo-nr h6{font-weight: normal;}
+    .seowz-listbox{margin-bottom: 5%;}
 }
 
 
