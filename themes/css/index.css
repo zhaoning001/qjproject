@@ -114,8 +114,8 @@ body{
 .process{width: 100%;height: 118px;background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));margin-top: 10px;}
 .process ul{width: 100%;overflow: hidden;}
 .process ul li{width: 20%;float: left;}
-.process ul li  img{display: block;width:19%;margin: 30px auto 12px;}
-.process ul li p{font-size: 12px;color: #fff;width: 100%;text-align: center;margin-top: 12px;}
+.process ul li  img{display: block;height:49px;margin: 25px auto 12px;}
+.process ul li p{font-size: 12px;color: #fff;width: 100%;text-align: center;margin-top: 12px;font-weight: bold;}
 .adve-box{width: 100%;position: relative;}
 .adve{width: 80%;}
 .adve-wzbox{width: 444px;height: 566px;background: url(/themes/images/about/adveimg.png) no-repeat;background-size: cover;position: absolute;top: 5%;left: 65%;}
@@ -170,7 +170,7 @@ body{
     .professional-box{margin-top: 50px;}
     .adve-list span{height: 34px;line-height: 34px;}
     .process ul li p{line-height: 20px;}
-    .process ul li img{width: 40%;}
+    .process ul li img{width: 40%;height: 34px;}
 }
 @media (min-width: 768px) and (max-width: 991px){ 
     .custom-box li{width: 23%;height: 90px;margin: 1%;}

@@ -17,7 +17,7 @@
 .erw-list{margin-right: 2%;}
 .erw-box .erw-img{width: 230px;height: 230px;background: #000;margin-right: 40px;margin: 0 auto;display: block;}
 .erw-box p{font-size: 18px;text-align: center;margin-top: 5%;}
-
+.erw-img img{width: 100%;}
 .banner-wz{width: 40%;position: absolute;top: 30%;right: 5%;}
 .banner-wz h1{font-size: 60px;font-weight: bold;}
 .banner-wz h2{font-size: 16px;margin-top: 16px;font-weight: bold;}

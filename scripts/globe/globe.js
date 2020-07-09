@@ -3,7 +3,7 @@ $(function () {
    //    动态头部  
    var toptempleat = ' <div class="nav-listbox">' +
       '            <div class="container">' +
-      '                <img src="/themes/images/logo.png" alt="">' +
+      '                <a href="/"><img src="/themes/images/logo.png" alt=""></a>' +
       '                <ul class="col-lg-6 col-md-7 col-sm-8 hidden-xs navlistul clearfix">' +
       '                    <li> <a href="/"> 首页</a></li>' +
       '                    <li> <a href="/pages/about.html"> 关于</a></li>' +
@@ -126,9 +126,9 @@ $(function () {
    $("body").append(' <div class="zhezbox">'+
    '         <div class="demandbox">'+
    '             <h1>需求提交</h1>'+
-   '             <input type="text" name="" id="UserName">'+
-   '             <input type="text" name="" id="PhoneNum">'+
-   '             <textarea name="" id="Usenr" cols="30" rows="10"></textarea>'+
+   '             <input type="text" name="" id="UserName" placeholder="您的姓名(必填)">'+
+   '             <input type="text" name="" id="PhoneNum" placeholder="您的联系方式(必填)">'+
+   '             <textarea name="" id="Usenr" cols="30" rows="10" placeholder="您的需求"></textarea>'+
    '             <div class="button-box">'+
    '                 <button>立即提交</button>'+
    '                 <button>关闭</button>'+
@@ -137,16 +137,16 @@ $(function () {
    '    </div>')
    $("body").append('<ul class="sidebar">'+
    '        <li><img src="/themes/images/sidebar1.png" alt=""><p>13269835962</p></li>'+
-   '        <li><img src="/themes/images/sidebar2.png" alt=""><div class="wx-img"></div></li>'+
-   '        <li><img src="/themes/images/sidebar3.png" alt=""></li>'+
+   '        <li><img src="/themes/images/sidebar2.png" alt=""><div class="wx-img"><img src="/themes/images/contactus/wxxm.jpg"></div></li>'+
+   '        <li class="sidebar-three"><img src="/themes/images/sidebar3.png" alt=""></li>'+
    '        <li><img src="/themes/images/sidebar4.png" alt="" id="sidebar_top"></li>'+
    '    </ul>')
+   $("body").append('<div id="qqbox"><img src="/themes/images/QQ.png"><p><span>点我立即咨询！</span></p></div>')
    window.onscroll = function() {scrollFunction()};
    $("body").on("click","#sidebar_top",function(){
       $('html, body').animate({scrollTop: 0}, 700)
 })
 	function scrollFunction() {
-      console.log(document.documentElement.scrollTop)
 	    if (document.documentElement.scrollTop >= 1) {
 	        $(".sidebar").css("right","0")
 	    } else {
@@ -155,8 +155,43 @@ $(function () {
 	}
 		
 })
-
-
+$("body").on("click",".sidebar-three",function() {
+   $(".zhezbox").show()
+})
+$("body").on("click",".button-box button",function() {
+   if($(this).text()=="关闭"){
+      $(".zhezbox").hide()
+   }else{
+      
+      var name=$("#UserName").val();
+      var phone=$("#PhoneNum").val();
+      var Usenr=$("#Usenr").val();
+        if(name.length==0){
+            alert("姓名不能为空")
+            return
+        }
+        if(phone.length==0){
+            alert("电话不能为空")
+            return
+        } 
+        $(this).text("正在提交中")
+        var submitdata={
+            "type":"mail",
+            "name":name,
+            "tel":phone,
+            "company":"",
+            "content":Usenr
+        }
+        var that=$(this)
+        uitll.getdata("/admin/front/contact?", "get", "", submitdata, "false", "true", function(data) {
+            alert("提交成功")
+            that.text("立即提交")
+            $(".zhezbox").hide()
+            $(".demandbox input").val("") 
+            $(".demandbox textarea").val("")
+       }) 
+   }
+})
 var uitll = {
    getdata: function(url, get, json, data, cache, async, success, error) {
       $.ajax({

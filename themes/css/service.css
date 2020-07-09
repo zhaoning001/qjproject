@@ -60,7 +60,7 @@
 .barndplan-box li{width: 15%;float: left;margin-right: 6%;}
 .barndplan-box li:last-child{margin-right: 0;}
 .barndplan-box li img{height: 62px;;display: block;margin: 30% auto 7%;}
-.barndplan-box li span{display: block;font-size: 16px;color: #fff;text-align: center;margin-bottom: 8%;}
+.barndplan-box li span{display: block;font-size: 16px;color: #fff;text-align: center;margin-bottom: 8%;font-weight: bold;}
 .barndplan-box li em{width: 70%;text-align:center;margin:0 auto;font-size: 12px;line-height: 24px;color: #fff;display: block;}
 .brand-problem h1{font-size: 40px;text-align: center;margin-top: 5%; color: #00458E;}
 .brand-problem h2{font-size: 20px;text-align: center;margin: 2% 0;}
