@@ -27,6 +27,16 @@
     -webkit-box-orient: vertical;}
 .dynamic-img{width: 30%;float: right;margin-top: 0.5%;}
 .dynamic-img img{width: 100%;}
+
+.dynadeyails{width: 100%;margin: 5% 0 0;border-bottom: 2px solid #000000;padding-bottom: 20px;}
+.dynadeyails h1{font-size: 40px;font-weight: bold;text-align: center;}
+.dynadeyails em{display: block;width:108px;height: 8px;background:linear-gradient(180deg,rgba(0,69,142,1),rgba(0,124,255,1));
+    border-radius:2px;margin: 28px auto;}
+.dails-times{width: 509px;margin: 0 auto;}
+.dails-times span{font-size: 20px;margin-right: 70px;font-size: 18px;line-height: 24px;margin-top: 5%;}
+.dails-nr{margin:5% 0;}
+.dails-nr p{font-size: 18px;line-height: 24px;margin-top: 3%;}
+.dails-nr img{max-width:100%;margin-top: 3%;}
 @media (max-width: 1200px) { 
 
 }
@@ -36,7 +46,7 @@
     .wzconten{margin-top: 5%;}
  }
 @media (max-width: 991px){ 
-    
+    .dynadeyails h1{font-size: 30px;}
 }
 @media (max-width: 768px) { 
     .time{margin-top: 3%;width: 100%;}
@@ -47,9 +57,14 @@
     .time h2{margin-top: 2%;}
     .time h1{font-size: 40px;}
     .wzconten p{width: 80%;margin: 2% auto;}
+    .dynadeyails h1{font-size: 20px;}
+    .dails-times{width: 400px;}
+    .dails-times span{font-size: 14px;margin-right: 5%;}
+    .dails-nr p{font-size: 14px;}
 } 
 @media (max-width: 479px) {
-
+    .dails-times{width: 90%;}
+    .time h2{font-size:18px;}
 }
 
 

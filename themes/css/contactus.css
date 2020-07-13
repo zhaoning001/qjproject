@@ -1,5 +1,6 @@
 .contactus-banner{width: 100%;margin-top: 90px;position: relative;}
 .contactus-banner img{width: 100%;}
+.contactus-subject{width: 80%;margin: 0 auto;}
 .contactus-subject h1{font-size: 34px;font-weight: bold;text-align: center;margin: 5% 0 1%;}
 .contactus-subject h2{font-size: 44px;font-weight: bold;color: #00458E;text-align: center;}
 .lixi-fs{width: 40%;margin-top: 5%;margin-left: 10%;}
@@ -17,7 +18,7 @@
 .erw-list{margin-right: 2%;}
 .erw-box .erw-img{width: 230px;height: 230px;background: #000;margin-right: 40px;margin: 0 auto;display: block;}
 .erw-box p{font-size: 18px;text-align: center;margin-top: 5%;}
-
+.erw-img img{width: 100%;}
 .banner-wz{width: 40%;position: absolute;top: 30%;right: 5%;}
 .banner-wz h1{font-size: 60px;font-weight: bold;}
 .banner-wz h2{font-size: 16px;margin-top: 16px;font-weight: bold;}
@@ -62,6 +63,9 @@
     .contactus-subject h1{font-size: 24px;}
     .contactus-subject h2{font-size: 24px;}
     .erw-box .erw-img{width:158px;height: 140px;}
+    .contactus-banner img{height: 200px;}
+    .contactus-banner{margin-top: 75px;}
+    .erw-box p{margin-top: 10%;font-size: 12px;}
 }
 
 

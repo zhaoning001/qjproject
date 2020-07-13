@@ -13,8 +13,8 @@
 </head>
 
 <body>
-     <div class="nav-listoutbox" data-type="3"></div>
-     <div class="bannertop-box" style="margin-top:90px;">
+    <div class="nav-listoutbox" data-type="3"></div>
+    <div class="bannertop-box" style="margin-top:90px;height: auto;">
         <img src="/themes/images/case/banner.png" alt="">
         <div class="banner-wz mark-wz" style="left:19%;">
             <h1>用心做好每一个项目</h1>
@@ -25,38 +25,16 @@
     </div>
     <div class="nav-listbg">
         <div class="container">
-            <ul class="clearfix">
-                <li>品牌网站</li>
-                <li>视觉设计</li>
-                <li>商标设计</li>
-                <li>微信小程序</li>
+            <ul class="nav-listul clearfix">
+
             </ul>
         </div>
     </div>
     <div class="container">
         <div class="">
             <ul class="case-listbox clearfix">
-                <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.1s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
-                </li>
-                <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.2s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
-                </li>
-                <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.3s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
-                </li>
-                <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.4s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
-                </li>
-                <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.5s">
-                    <img src="/themes/images/case/caseimg.png" alt="">
-                    <p>良策世纪品牌网站建设</p>
-                </li>
-           </ul>
+
+            </ul>
         </div>
     </div>
     <!-- 内容 -->
@@ -68,5 +46,37 @@
 <script src="/scripts/globe/globe.js"></script>
 <script>
     new WOW().init();
+    $(".nav-listul").on("click", "li", function () {
+        $(this).addClass("nav-active").siblings().removeClass("nav-active");
+        nrlist($(this).data("id"))
+    })
+    uitll.getdata("/admin/front/menu?type=product", "get", "", "", "false", "true", function (data) {
+        $.each(data.data, function (index, val) {
+            if (index == 0) {
+                var navtemplater = '<li class="nav-active" data-id=' + val.id + '><a href="javascript:;">' + val.name + '</a></li>'
+                nrlist(val.id)
+            } else {
+                var navtemplater = '<li data-id=' + val.id + '><a href="javascript:;">' + val.name + '</a></li>'
+            }
+            $(".nav-listul").append(navtemplater)
+        })
+    })
+    function nrlist(id) {
+        uitll.getdata("/admin/front/mlist?type=" + id + "&page=1&limit=6", "get", "", "", "false", "true", function (data) {
+            $(".case-listbox").empty()
+            if(data.data.length==0){
+                $(".case-listbox").append("<li class='notconter'>暂无内容</li>")
+            }
+            $.each(data.data,function (index, val) {
+                var nrlistemplat = '<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.1s">' +
+                    '                    <a href="/pages/casedetali.html?id=' + val.id + '">' +
+                    '                    <img src=' + val.path + ' alt="">' +
+                    '                    <p>' + val.title + '</p></a>' +
+                    '                </li>';
+                $(".case-listbox").append(nrlistemplat)
+            })
+        })
+    }
 </script>
+
 </html>

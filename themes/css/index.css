@@ -55,8 +55,7 @@ body{
 .secthree-right ul li{width: 33.33%;height: 33.33%;float: left;padding: 9px;}
 .secthree-right ul li a{height: 100%;position: relative;display: block;overflow: hidden;}
 .works-bg{height: 100%;background-position: center center;background-size:cover ;}
-.secthree-right ul li p{position: absolute;width: 100%;bottom: -100px;left: 0;background: #0067D4;line-height: 54px;text-align: center;color: #fff;font-size: 14px;transition: all .6s ease;}
-.secthree-right ul li:hover p{bottom: 0}
+.secthree-right ul li p{position: absolute;width: 100%;bottom: 0;left: 0;background: #0067D4;line-height: 54px;text-align: center;color: #fff;font-size: 14px;transition: all .6s ease;}
 .secthree-left{width:25%;height: 100%;background: #0067D4;position: absolute;top: 0;left: 0;}
 .secthree-left h1{font-weight: bold;width: 100%;text-align: center;font-size: 34px;margin: 20% 0 3%;color: #fff;}
 .secthree-left h2{font-weight: bold;width: 100%;text-align: center;font-size: 42px;color: #fff;margin-bottom: 15%;}
@@ -102,7 +101,7 @@ body{
     animation-fill-mode: both;
 }
 .customers-box{
-    padding: 1% 0;
+    padding: 1% 0; 
     background-image:url("/themes/images/index/logoiocn.png") ;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -111,11 +110,11 @@ body{
 
 /* 关于我们 */
 .bannertop-box{position: relative;}
-.process{width: 100%;height: 118px;background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));margin-top: 10px;}
+.process{width: 100%;height: 140px;background:linear-gradient(54deg,rgba(0,69,142,1),rgba(0,124,255,1));margin-top: 10px;}
 .process ul{width: 100%;overflow: hidden;}
 .process ul li{width: 20%;float: left;}
-.process ul li  img{display: block;width:19%;margin: 30px auto 12px;}
-.process ul li p{font-size: 12px;color: #fff;width: 100%;text-align: center;margin-top: 12px;}
+.process ul li  img{display: block;height:49px;margin: 33px auto 12px;}
+.process ul li p{font-size: 16px;color: #fff;width: 100%;text-align: center;margin-top: 12px;font-weight: bold;}
 .adve-box{width: 100%;position: relative;}
 .adve{width: 80%;}
 .adve-wzbox{width: 444px;height: 566px;background: url(/themes/images/about/adveimg.png) no-repeat;background-size: cover;position: absolute;top: 5%;left: 65%;}
@@ -123,6 +122,11 @@ body{
 .adve-list span{width: 160px;height: 40px;background: #fff;text-align: center;line-height:40px;display: block;font-size: 20px;color: #00468F;font-weight: bold;margin-bottom: 16px;;}
 .adve-list p{font-size: 16px;color: #fff;line-height: 20px;}
 #bannerwz{width: 422px !important;position: absolute;left: 38%;top: 30%;}
+.suspension{width: 500px;position: fixed;left: 50%;top: 40%;margin-left: -250px;display: none;}
+.susperclose{width: 20px;height: 20px;display: block;position: absolute;right: 10px;top:10px;}
+.suspension button{border: 1px solid #fff;color: #fff;display: block;width: 100px;height: 30px;font-size: 14px;background: none;position: absolute;left: 40%;top: 66%;}
+.secthree-right h1{font-size: 20px;color:#00458E;text-align: center;font-weight: bold;display: none;}
+.secthree-right H2{font-size: 20px;text-align: center;font-weight: bold;margin: 5% 0 3%;display: none;}
 @media (max-width: 768px) { 
     .custom-box li{width:30%;margin:1%;height: 55px;margin: 1.5%;}
     .custom-box li img{max-width: 90%;}
@@ -130,8 +134,8 @@ body{
     .threetitle{font-size: 20px;}
     .threettitltow{font-size: 20px;}
     .qh-three ul li{height: 342px;}
-    .qh-three ul{width: 90%;margin: 2%auto 0;}
-    .qh-three ul li{margin-bottom: 20px;}
+    .qh-three ul{width: 90%;margin: 5% auto 0;}
+    .qh-three ul li{margin-bottom: 10px;}
     .qh-three ul li{height: 342px;}
     .secthree-right{padding: 22px;}
     .secthree-right ul li{width: 50%;padding:6px;height: 25.33%;}
@@ -160,6 +164,8 @@ body{
     #bannerwz{width: 40% !important;left: 32%;}
     .adve-list{margin-bottom: 11px;}
     .adve-box img{margin-top: 47px;}
+    .suspension{width: 400px;margin-left: -200px;}
+    .secthree-right ul li p{line-height:40px;}
  }
 @media (max-width: 479px) {
     .qhtwo-list li{height: 250px;}
@@ -169,8 +175,22 @@ body{
     .adve-box img{display: none;}
     .professional-box{margin-top: 50px;}
     .adve-list span{height: 34px;line-height: 34px;}
-    .process ul li p{line-height: 20px;}
-    .process ul li img{width: 40%;}
+    .process ul li p{line-height: 20px;font-size: 12px;}
+    .process ul li img{height: 26px;}
+    .qhtwo-list span{font-size: 14px!important;}
+    .qhtwo-list em{font-size: 12px!important;}
+    .qhtwoimg-box{width: 45px;height: 41px;margin: 14% auto;}
+    .qhtwo-list img{width: 45px;height: 41px;}
+    .qhtwo-list{margin-top:5%;}
+    .threetitle{margin: 5% 0 3%;}
+    #bannerwz{height: auto;width: 60%!important;left: 20%;}
+    .qh-two p{margin-top: 5%;}
+    .process{height: 114px;}
+    .suspension{width: 300px;margin-left: -150px;}
+    .suspension button{width: 84px;height: 25px;font-size: 12px;}
+    .secthree-right h1{display: block;}
+    .secthree-right h2{display: block;}
+    .secthree-right ul{margin-top: 30px;}
 }
 @media (min-width: 768px) and (max-width: 991px){ 
     .custom-box li{width: 23%;height: 90px;margin: 1%;}

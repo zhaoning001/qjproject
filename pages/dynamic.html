@@ -23,8 +23,8 @@
         </div>
     </div>
     <ul class="dynamic-list">
-        <li>
-            <a href="javascript:;">
+        <!-- <li>
+            <a href="/pages/dynamicdetails.html">
                 <div class="container">
                     <div class="time">
                         <h1>06</h1>
@@ -37,52 +37,8 @@
                     <div class="dynamic-img"><img src="/themes/images/dynamic/zw1.png" alt=""></div>
                 </div>
             </a>
-        </li>
-        <li>
-            <a href="javascript:;">
-                <div class="container">
-                    <div class="time">
-                        <h1>06</h1>
-                        <h2>2020-5</h2>
-                    </div>
-                    <div class="wzconten">
-                        <h1>青京科技签约良策世纪</h1>
-                        <p>青京科技签约良策世纪，为公司品牌网站建设助力。良策世纪文化发展（北京）有限公司简称良策世纪，创立于2003年，总部设在北京，是最早的成立的文化产业机构之一专注于公关活动，会议会展，赛事运营，品牌策略，商务考察，团建旅游，文创产品七大核心业务板块。</p>
-                    </div>
-                    <div class="dynamic-img"><img src="/themes/images/dynamic/zw2.png" alt=""></div>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:;">
-                <div class="container">
-                    <div class="time">
-                        <h1>06</h1>
-                        <h2>2020-5</h2>
-                    </div>
-                    <div class="wzconten">
-                        <h1>青京科技签约良策世纪</h1>
-                        <p>青京科技签约良策世纪，为公司品牌网站建设助力。良策世纪文化发展（北京）有限公司简称良策世纪，创立于2003年，总部设在北京，是最早的成立的文化产业机构之一专注于公关活动，会议会展，赛事运营，品牌策略，商务考察，团建旅游，文创产品七大核心业务板块。</p>
-                    </div>
-                    <div class="dynamic-img"><img src="/themes/images/dynamic/zw1.png" alt=""></div>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:;">
-                <div class="container">
-                    <div class="time">
-                        <h1>06</h1>
-                        <h2>2020-5</h2>
-                    </div>
-                    <div class="wzconten">
-                        <h1>青京科技签约良策世纪</h1>
-                        <p>青京科技签约良策世纪，为公司品牌网站建设助力。良策世纪文化发展（北京）有限公司简称良策世纪，创立于2003年，总部设在北京，是最早的成立的文化产业机构之一专注于公关活动，会议会展，赛事运营，品牌策略，商务考察，团建旅游，文创产品七大核心业务板块。</p>
-                    </div>
-                    <div class="dynamic-img"><img src="/themes/images/dynamic/zw1.png" alt=""></div>
-                </div>
-            </a>
-        </li>
+        </li> -->
+
        
    </ul>
 
@@ -99,5 +55,27 @@
 <script src="/scripts/globe/globe.js"></script>
 <script>
     new WOW().init();
+    uitll.getdata("/admin/front/live?type=live&page=1&limit=10", "get", "", "", "false", "true", function(data) {
+        $.each(data.data,function(index,val){
+           var year=val.date.substring(8,11)
+	       var month=val.date.substring(0,7)
+           var litemplat='<li>'+
+'            <a href="/pages/dynamicdetails.html?id='+ val.id +'">'+
+'                <div class="container">'+
+'                    <div class="time">'+
+'                        <h1>'+year+'</h1>'+
+'                        <h2>'+month+'</h2>'+
+'                    </div>'+
+'                    <div class="wzconten">'+
+'                        <h1>'+val.title+'</h1>'+
+'                        <p>'+ val.content +'</p>'+
+'                    </div>'+
+'                    <div class="dynamic-img"><img src='+ val.path +' alt=""></div>'+
+'                </div>'+
+'            </a>'+
+'        </li>';
+        $(".dynamic-list").append(litemplat)
+        })
+    }) 
 </script>
 </html>
