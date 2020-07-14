@@ -35,6 +35,7 @@
             <ul class="case-listbox clearfix">
 
             </ul>
+            <div class="m-style M-box11"></div>
         </div>
     </div>
     <!-- 内容 -->
@@ -44,25 +45,26 @@
 <script src="/scripts/globe/jquery-2.1.1.min.js"></script>
 <script src="/scripts/globe/wow.min.js"></script>
 <script src="/scripts/globe/globe.js"></script>
+<script src="/scripts/globe/page.js"></script>
 <script>
     new WOW().init();
     $(".nav-listul").on("click", "li", function () {
         $(this).addClass("nav-active").siblings().removeClass("nav-active");
-        nrlist($(this).data("id"))
+        nrlist($(this).data("id"),1)
     })
     uitll.getdata("/admin/front/menu?type=product", "get", "", "", "false", "true", function (data) {
         $.each(data.data, function (index, val) {
             if (index == 0) {
                 var navtemplater = '<li class="nav-active" data-id=' + val.id + '><a href="javascript:;">' + val.name + '</a></li>'
-                nrlist(val.id)
+                nrlist(val.id,1)
             } else {
                 var navtemplater = '<li data-id=' + val.id + '><a href="javascript:;">' + val.name + '</a></li>'
             }
             $(".nav-listul").append(navtemplater)
         })
     })
-    function nrlist(id) {
-        uitll.getdata("/admin/front/mlist?type=" + id + "&page=1&limit=6", "get", "", "", "false", "true", function (data) {
+    function nrlist(id,pages) {
+        uitll.getdata("/admin/front/mlist?type=" + id + "&page="+ pages +"&limit=6", "get", "", "", "false", "true", function (data) {
             $(".case-listbox").empty()
             if(data.data.length==0){
                 $(".case-listbox").append("<li class='notconter'>暂无内容</li>")
@@ -75,11 +77,29 @@
                     '                </li>';
                 $(".case-listbox").append(nrlistemplat)
             })
+            if(pages==1 && data.count>6){
+                yem(id,data)
+                $('.M-box11').show()
+            }else if(data.count<=6){
+                $('.M-box11').hide()
+            }
         })
     }
-    $(".nav-listul li").click(function(){
-        $(this).addClass("nav-active").siblings().removeClass("nav-active")
-    })
+    function yem(id,data){
+            var pages = Math.ceil(data.count / 6)
+            $('.M-box11').pagination({
+                pageCount: pages,
+                jump: true,
+                coping: true,
+                homePage: '首页',
+                endPage: '末页',
+                prevContent: '上页',
+                nextContent: '下页',
+                callback: function(api) {
+                    nrlist(id, api.getCurrent())
+                }
+            });     
+    }
 </script>
 
 </html>

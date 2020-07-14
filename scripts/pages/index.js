@@ -67,9 +67,14 @@ $(function () {
 	   })
 		
 	}) 
-	setTimeout(function(){
-		$(".suspension").show()
-	},10000)
+	if(sessionStorage.getItem("suspension") == null){
+		setTimeout(function(){
+			$(".suspension").show();
+			sessionStorage.setItem("suspension", "true");
+	
+		},10000)
+	}
+	
 	$(".susperclose").click(function(){
 		$(".suspension").hide()
 	})

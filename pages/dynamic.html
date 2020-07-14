@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,62 +24,72 @@
         </div>
     </div>
     <ul class="dynamic-list">
-        <!-- <li>
-=======
-        <li>
->>>>>>> 6a29dc81821ffd8376ebe8a4632734fdd8333d0f
-            <a href="/pages/dynamicdetails.html">
-                <div class="container">
-                    <div class="time">
-                        <h1>06</h1>
-                        <h2>2020-5</h2>
-                    </div>
-                    <div class="wzconten">
-                        <h1>青京科技签约良策世纪</h1>
-                        <p>青京科技签约良策世纪，为公司品牌网站建设助力。良策世纪文化发展（北京）有限公司简称良策世纪，创立于2003年，总部设在北京，是最早的成立的文化产业机构之一专注于公关活动，会议会展，赛事运营，品牌策略，商务考察，团建旅游，文创产品七大核心业务板块。</p>
-                    </div>
-                    <div class="dynamic-img"><img src="/themes/images/dynamic/zw1.png" alt=""></div>
-                </div>
-            </a>
-        </li> -->
 
-       
-   </ul>
-
-
-     <div class="professional-box">
+    </ul>
+    <div class="m-style M-box11"></div>
+    <div class="professional-box">
         <h1>您刚好需要我们刚好专业</h1>
         <h2>青京科技，一站式品牌建设推广服务商！</h2>
         <a href="/pages/contactus.html"><button>联系我们</button></a>
-   </div>
+    </div>
     <div class="footer-box"></div>
 </body>
 <script src="/scripts/globe/jquery-2.1.1.min.js"></script>
 <script src="/scripts/globe/wow.min.js"></script>
 <script src="/scripts/globe/globe.js"></script>
+<script src="/scripts/globe/page.js"></script>
 <script>
     new WOW().init();
-    uitll.getdata("/admin/front/live?type=live&page=1&limit=10", "get", "", "", "false", "true", function(data) {
-        $.each(data.data,function(index,val){
-           var year=val.date.substring(8,11)
-	       var month=val.date.substring(0,7)
-           var litemplat='<li>'+
-'            <a href="/pages/dynamicdetails.html?id='+ val.id +'">'+
-'                <div class="container">'+
-'                    <div class="time">'+
-'                        <h1>'+year+'</h1>'+
-'                        <h2>'+month+'</h2>'+
-'                    </div>'+
-'                    <div class="wzconten">'+
-'                        <h1>'+val.title+'</h1>'+
-'                        <p>'+ val.content +'</p>'+
-'                    </div>'+
-'                    <div class="dynamic-img"><img src='+ val.path +' alt=""></div>'+
-'                </div>'+
-'            </a>'+
-'        </li>';
-        $(".dynamic-list").append(litemplat)
+    function datanr(pages) {
+
+        uitll.getdata("/admin/front/live?type=live&page=" + pages + "&limit=10", "get", "", "", "false", "true", function (data) {
+            $(".dynamic-list").empty()
+            $.each(data.data, function (index, val) {
+                var year = val.date.substring(8, 11)
+                var month = val.date.substring(0, 7)
+                var litemplat = '<li>' +
+                    '            <a href="/pages/dynamicdetails.html?id=' + val.id + '">' +
+                    '                <div class="container">' +
+                    '                    <div class="time">' +
+                    '                        <h1>' + year + '</h1>' +
+                    '                        <h2>' + month + '</h2>' +
+                    '                    </div>' +
+                    '                    <div class="wzconten">' +
+                    '                        <h1>' + val.title + '</h1>' +
+                    '                        <p>' + val.content + '</p>' +
+                    '                    </div>' +
+                    '                    <div class="dynamic-img"><img src=' + val.path + ' alt=""></div>' +
+                    '                </div>' +
+                    '            </a>' +
+                    '        </li>';
+                $(".dynamic-list").append(litemplat)
+            })
+            console.log(data)
+            if (pages == 1 && data.count >10) {
+                yem(data)
+                $('.M-box11').show()
+            } else if (data.count <= 10) {
+                $('.M-box11').hide()
+            }
         })
-    }) 
+
+    }
+    datanr(1)
+    function yem(data) {
+        var pages = Math.ceil(data.count / 2)
+        $('.M-box11').pagination({
+            pageCount: pages,
+            jump: true,
+            coping: true,
+            homePage: '首页',
+            endPage: '末页',
+            prevContent: '上页',
+            nextContent: '下页',
+            callback: function (api) {
+                datanr(api.getCurrent())
+            }
+        });
+    }
 </script>
+
 </html>
