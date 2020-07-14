@@ -68,24 +68,15 @@ body{
 .threettitltow{font-size: 42px;font-weight: bold;width: 100%;text-align: center;color: #00458E;}
 .qh-three ul{width: 100%;overflow: hidden;height: 90%;margin-top: 3%;}
 .qh-three ul li{background-size: cover;background-position: center center;padding: 0;background-repeat: no-repeat;height: 397px;overflow: hidden;}
-.nes-div{width: 50%;height:100%;background: rgba(0, 124, 255, .4);transition: all .6s ease;opacity: 0;}
-.qh-three ul li:nth-child(1) .nes-div,.qh-three ul li:nth-child(3) .nes-div{
-    transform: translateX(100%);
-  }
-  .qh-three ul li:nth-child(2) .nes-div,.qh-three ul li:nth-child(5) .nes-div{
-    transform: translateY(-100%);
-  }
-  .qh-three ul li:nth-child(4) .nes-div,.qh-three ul li:nth-child(6) .nes-div{
-    transform: translateX(-100%);
-  }
+.nes-div{width: 100%;height:100%;background: rgba(0, 124, 255, .4);transition: all .6s ease;opacity:1;}
 .qh-three ul li:hover .nes-div{transform: translateY(0); opacity: 1;} 
-.nes-divnrbox{width: 80%;margin-top: 60%;margin-left:10%;}
+.nes-divnrbox{width: 80%}
 .nes-div h1{font-size: 20px;font-weight: bold;width: 100%;color: #fff;text-align: left;}
 .nes-div span{font-size: 14px;width: 100%;display: block;color: #fff;margin: 10px 0;}
 .nes-div em{display: block;width: 142px;height: 3px;background: #fff;}
 .nes-div p{font-size: 14px;color: #fff;line-height: 18px;margin-top: 10px;}
 .nes-divtwo{display: flex;justify-content: center;align-items: center;}
-.nes-divtwo div{width: 60%;}
+.nes-divtwo div{width: 80%;margin: 0 auto;}
 .custom-box{width: 100%;}
 .custom-box li{width:18%;margin:1%;height: 117px;float: left;cursor: pointer;}
 .custom-box li div{width: 100%;height: 100%;border: 1px solid #8D8D8D;transition: all .6s ease;display: flex;justify-content: center;align-items: center;}
@@ -190,7 +181,9 @@ body{
     .suspension button{width: 84px;height: 25px;font-size: 12px;}
     .secthree-right h1{display: block;}
     .secthree-right h2{display: block;}
-    .secthree-right ul{margin-top: 30px;}
+    .secthree-right ul{margin-top: 6px;}
+    .secthree-right ul li p{line-height: 34px;font-size: 12px;}
+    .secthree-right ul li{height: 18.33%;}
 }
 @media (min-width: 768px) and (max-width: 991px){ 
     .custom-box li{width: 23%;height: 90px;margin: 1%;}

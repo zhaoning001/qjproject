@@ -15,17 +15,6 @@
 
 </style>
 <body>
-    <div class="nav-listoutbox"></div> 
-    <div class="bannertop-box" style="margin-top: 90px;">
-        <div class="container">
-            <h6></h6>
-            <h5></h5>
-            <button><a href="javascript:;" target="_bank">点击访问</a></button>
-        </div>
-    </div>
-    <div class="container" style="margin-top: -10%;position:relative;z-index:99;">
-</style>
-<body>
     <div class="nav-listoutbox"></div>
     <div class="bannertop-box" style="margin-top: 90px;min-height:450px;">
         <div class="container">
@@ -36,7 +25,7 @@
     </div>
     <div class="container">
         <div class="casedate-nr">
-            <img src="/themes/images/case/casezw.png" alt="">
+           
         </div>
     </div>
     <!-- 内容 -->
@@ -50,7 +39,11 @@
     uitll.getdata("/admin/front/text/"+id, "get", "", "", "false", "true", function(data) {
         $(".bannertop-box h6").text(data.data.title)
         $(".casedate-nr").html(data.data.content)
-        $(".bannertop-box button a").attr("href",data.data.url)
+        if(data.data.url){
+            $(".bannertop-box button a").attr("href",data.data.url)
+        }else{
+            $(".bannertop-box button").hide()
+        }
         $(".bannertop-box h5").text(data.data.depict)
     })
 </script>

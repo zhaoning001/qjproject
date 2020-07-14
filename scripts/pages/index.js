@@ -44,30 +44,24 @@ $(function () {
 	   $.each(data.data,function(index,val) {
 		var month=val.date.substring(0,10)
 		dynamictime=+0.1;
-		var litemplate=' <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow flipInY animated" data-wow-delay="0.1s"'+
-		'                    style="background-image: url('+ val.path +');">'+
+		var litemplate=' <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow flipInY animated" data-wow-delay="0.1s"'+ 'style="background-image: url('+ val.path +');">'+
+		'<a href="/pages/dynamicdetails.html?id='+ val.id +'">'+
 		'                    <div class="nes-div">'+
 		'                        <div class="nes-divnrbox">'+
 		'                            <h1>'+ val.title +'</h1>'+
 		'                            <span>'+ month +'</span>'+
 		'                            <em></em>'+
-		'                            <p>'+ val.content +'</p>'+
 		'                        </div>'+
 		'                    </div>'+
+        '</a>'+
 		'                </li>';
 		var lisemplat=$(litemplate).clone()
-		if(index==1 || index==3){
-			lisemplat.find(".nes-div").addClass("nes-divtwo")
-		}else if(index==2 || index==5){
-			lisemplat.find(".nes-div").addClass("fl")
-		}else{
-			lisemplat.find(".nes-div").addClass("fr")
-		}
+		lisemplat.find(".nes-div").addClass("nes-divtwo")
 		$(".qh-three ul").append(lisemplat)
 	   })
 		
 	}) 
-	if(sessionStorage.getItem("suspension") == null){
+	if(sessionStorage.getItem("suspension") == null &&document.body.clientWidth<760){
 		setTimeout(function(){
 			$(".suspension").show();
 			sessionStorage.setItem("suspension", "true");
