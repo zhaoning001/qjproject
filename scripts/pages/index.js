@@ -26,7 +26,7 @@ $(function () {
 		}
 	})
 	var casetime=0.1
-    uitll.getdata("/admin/front/cases?type=manage&page=1&limit=6", "get", "", "", "false", "true", function(data) {
+    uitll.getdata("/admin/front/cases?type=manage&page=1&limit=9", "get", "", "", "false", "true", function(data) {
 	   $.each(data.data,function(index,val) {
 		casetime=+0.1;
 		var litemplate='   <li class="wow fadeInUp animated"  data-wow-offset="10" data-wow-delay='+ casetime +"s"+'>'+

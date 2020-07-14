@@ -280,14 +280,13 @@ float: left;margin-right:10%;margin-bottom: 5%;}
     .station-qybox ul li{height: 260px;width: 45%;}
     .station-qybox ul li{margin-right: 3%;}
     .station-qybox ul{margin-left: 3%;}
-    .towbarndplan-box li{width: 48%;margin-top: 10px;margin-right: 4%;}
+    .towbarndplan-box li{width: 48%;margin-top: 16px;margin-right: 4%;}
     .towbarndplan-box li:nth-child(2n+2){margin-right: 0;}
     .towbarndplan-box li img{margin: 0;float: left;margin-right: 10px;}
-    .towbarndplan-box li span{text-align: left;float: right;width:69%;}
-    .towbarndplan-box li em{width: 69%;text-align: left;float: right;}
-    .barndplan-box li img{height: 31px;}
-    .towbarndplan-box{height: auto;padding: 5px 0;}
-    .barnd-nrbox h1{width: 65%;margin: 0 auto;}
+    .towbarndplan-box li span{text-align: left;float: right;width:75%;}
+    .towbarndplan-box li em{width: 75%;text-align: left;float: right;}
+    .barndplan-box li img{height: 31px;margin-right: 0;}
+    .barnd-nrbox h1{width: 65%;margin: 0 auto;font-size: 18px;}
     .brand-problem li{height: 140px;}
     .brandpro-wz h3{font-size: 16px;margin-top: 10%;}
     .service-box ul li{height: 268px;}
