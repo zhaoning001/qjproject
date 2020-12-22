@@ -213,7 +213,7 @@ a.color-333:hover, .hover-red:hover {
 .professional-box a button{width: 100%;height: 100%;background: #fff;color: #004EA0;font-size:16px;font-weight: bold;}
 .banner-topbox{width: 100%;margin-top: 90px;position: relative;}
 .banner-topbox img{width: 100%;}
-.zhezbox{width: 100%;height: 100%;background:rgba(0,0,0,0.6);position: fixed;top: 0;left: 0;display: none;}
+.zhezbox{width: 100%;height: 100%;background:rgba(0,0,0,0.6);position: fixed;top: 0;left: 0;display: none;z-index: 10000000;}
 .demandbox{width:23%;height: 488px;background: #fff;padding: 2%;position: absolute;left: 38%;top:30%;}
 .demandbox h1{font-size: 28px;text-align: center;color: #00458E;}
 .demandbox input{width: 100%;height: 46px;border: 1px solid #6D6D6D;font-size: 12px;margin-top: 20px;text-indent: 20px;}

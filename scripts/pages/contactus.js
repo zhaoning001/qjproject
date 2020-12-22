@@ -10,8 +10,8 @@ $(function() {
               alert("姓名不能为空")
               return
           }
-          if(phone.length==0){
-              alert("电话不能为空")
+          if(phone.length==0 || !/^1\d{10}$/.test(phone)){
+              alert("请输入合法手机号码！")
               return
           } 
           $(this).text("正在提交中")

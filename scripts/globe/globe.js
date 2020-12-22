@@ -120,7 +120,7 @@ $(function () {
    '         <div class="demandbox">'+
    '             <h1>需求提交</h1>'+
    '             <input type="text" name="" id="UserName" placeholder="您的姓名(必填)">'+
-   '             <input type="text" name="" id="PhoneNum" placeholder="您的联系方式(必填)">'+
+   '             <input type="text" name="" id="PhoneNum" placeholder="您的手机号码(必填)">'+
    '             <textarea name="" id="Usenr" cols="30" rows="10" placeholder="您的需求"></textarea>'+
    '             <div class="button-box">'+
    '                 <button>立即提交</button>'+
@@ -154,8 +154,7 @@ $("body").on("click",".sidebar-three",function() {
 $("body").on("click",".button-box button",function() {
    if($(this).text()=="关闭"){
       $(".zhezbox").hide()
-   }else{
-      
+   }else{    
       var name=$("#UserName").val();
       var phone=$("#PhoneNum").val();
       var Usenr=$("#Usenr").val();
@@ -163,8 +162,8 @@ $("body").on("click",".button-box button",function() {
             alert("姓名不能为空")
             return
         }
-        if(phone.length==0){
-            alert("电话不能为空")
+        if(phone.length==0 || !/^1\d{10}$/.test(phone)){
+            alert("请输入合法手机号码！")
             return
         } 
         $(this).text("正在提交中")
@@ -182,7 +181,7 @@ $("body").on("click",".button-box button",function() {
             $(".zhezbox").hide()
             $(".demandbox input").val("") 
             $(".demandbox textarea").val("")
-       }) 
+        }) 
    }
 })
 var uitll = {
